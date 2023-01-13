@@ -7,10 +7,16 @@
     align-items: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (max-width: 767px) {
+     display: block;
+    }
 }
 
 .contact {
     margin-right: 70px;
+
+    
 }
 
 .address {
@@ -45,12 +51,12 @@
 
 /* Приєднуйтесь до нас */
 
-.social {
+.join-us {
     margin-top: 12px;
     margin-right: 93px;
 }
 
-.join-us {
+.join-us__title {
     margin-top: 0;
     margin-bottom: 20px;
     font-weight: 700;
@@ -61,7 +67,28 @@
     color: $white;
 }
 
-.socials__link-footer {
+.socials {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    justify-content: center;
+}
+
+.join-us__item {
+    width: 44px;
+    height: 44px;
+}
+
+.join-us__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.join-us__link {
     fill: $white;
     background-color: $background-icon-footer;
 
@@ -79,6 +106,10 @@
 
 .subscribe {
     display: flex;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
 
     &__input {
     margin: 0;
