@@ -14,6 +14,14 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+    }
+
+    @media screen  and (min-width: 768px) and (max-width:1119px) {
+        flex-wrap: wrap;
+    }
 }
 
 .company__item {
@@ -28,6 +36,16 @@
     &:hover,
     &:focus {
     border-color: $accent;
+
+    @media screen and (max-width: 767px) {
+        width: 50%; 
+        padding: 16px 52px;
+    }
+
+    @media screen  and (min-width: 768px) and (max-width:1119px) {
+        width: 33.3333%; 
+        padding: 16px 60px;
+    }
 }
 }
 
