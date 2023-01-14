@@ -8,20 +8,56 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        justify-content: center;
+        }
+
     @media screen and (max-width: 767px) {
-     display: block;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    @media screen  and (min-width: 768px) and (max-width:1119px) {
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 }
 
 .contact {
     margin-right: 70px;
 
-    
+    @media screen and (max-width: 480px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen  and (min-width: 768px) and (max-width:1119px) {
+        margin-right: 0;
+        text-align: center;
+    }
 }
 
 .address {
     margin-top: 20px;
     font-style: normal;
+
+    @media screen and (max-width: 480px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen  and (min-width: 768px) and (max-width:1119px) {
+        margin-bottom: 60px;
+    }
 
     &__sity {
     margin-bottom: 9px;
@@ -29,6 +65,19 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+
+    @media screen and (max-width: 480px) {
+        margin-bottom: 8px;
+    }
+    
+    @media screen and (max-width: 767px) {
+        margin-bottom: 8px;
+    }
+
+    @media screen  and (min-width: 768px) and (max-width:1119px) {
+        margin-bottom: 8px;
+    }
+
 }
     &__item--bottom {
     margin-bottom: 9px;
@@ -54,6 +103,23 @@
 .join-us {
     margin-top: 12px;
     margin-right: 93px;
+
+    @media screen and (max-width: 480px) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+
+    @media screen  and (min-width: 768px) and (max-width:1119px) {
+        margin-top: 0;
+        margin-right: 0;
+    }
 }
 
 .join-us__title {
@@ -65,13 +131,37 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $white;
+
+    @media screen and (max-width: 480px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen  and (min-width: 768px) and (max-width:1119px) {
+       text-align: center;
+    }
 }
 
-.socials {
+.join-us__list {
     display: flex;
-    align-items: baseline;
-    gap: 10px;
+    align-items: center; 
     justify-content: center;
+    gap: 10px;
+
+    @media screen and (max-width: 480px) {
+        justify-content: flex-start;
+        margin-bottom: 60px;
+    }
+   
+    @media screen and (max-width: 767px) {
+        justify-content: flex-start;
+        margin-bottom: 60px;
+    }
 }
 
 .join-us__item {
@@ -104,13 +194,60 @@
 
 /* Підписка footer */
 
+
+.subscription {
+    @media screen and (max-width: 480px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    @media screen  and (min-width: 768px) and (max-width:1119px) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+}
+
+
+.subscription__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 480px) {
+        text-align: center;
+    }
+
+    @media screen and (max-width: 767px) {
+     text-align: center;
+    }
+}
+
+
 .subscribe {
     display: flex;
+
+    @media screen and (max-width: 480px) {
+        display: block;
+    }
 
     @media screen and (max-width: 767px) {
         display: block;
     }
 
+    @media screen  and (min-width: 768px) and (max-width:1119px) {
+       flex-direction: column;
+    }
+    
     &__input {
     margin: 0;
     margin-right: 12px;
@@ -122,6 +259,22 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: $background-color-dark;
+
+    @media screen and (max-width: 480px) {
+        margin-bottom: 20px;
+        max-width: 450px;
+    }
+
+    @media screen and (max-width: 767px) {
+       margin-bottom: 20px;
+       max-width: 450px;
+    }
+
+    @media screen  and (min-width: 768px) and (max-width:1119px) {
+       margin-bottom: 20px;
+       max-width: 450px;
+    }
+    
 }
     &__icon {
     margin-left: 10px;
