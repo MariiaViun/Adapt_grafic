@@ -5,26 +5,25 @@
     display: flex;
     align-items: center;
 
-    @media screen and (min-width: 767px) and (max-width:1119px) {
-        display: flex;
-        align-items: center;
+    // @media screen and (min-width: 767px) and (max-width:1119px) {
+    //     display: flex;
+    //     align-items: center;}
 }
-}
-    &__nav{
+    
+&__nav{
     display: flex;
     align-items: center;
 }
 }
 
 .menu {
-
-    @media screen and (max-width: 767px) {
-        display: none;
-    } 
-        
     display: flex; 
     margin-left: 93px;
     gap: 50px;
+
+    // @media screen and (max-width: 767px) {
+    //     display: none;
+    // } 
 
     &__link {
     display: inline-block;
@@ -67,32 +66,32 @@
 .contacts {
     margin-left: auto;
 
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
+    // @media screen and (max-width: 767px) {
+    //     display: none;
+    // }
     
     &__list {
     display: flex;
-    gap: 40px;
+    gap: 40px;}
      
-    @media screen  and (min-width: 767px) and (max-width:1119px) {
-       display: block;  
-    }
-}
+    // @media screen  and (min-width: 767px) and (max-width:1119px) {
+    //    display: block;  
+    // }
 
-&__item {
-    @media screen  and (min-width: 767px) and (max-width:1119px) {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }
-}
+
+// &__item {
+//     @media screen  and (min-width: 767px) and (max-width:1119px) {
+//         display: flex;
+//         align-items: center;
+//         justify-content: flex-start;
+//     }
+// }
  
-&__item:not(:last-child) {
-    @media screen  and (min-width: 767px) and (max-width:1119px) {
-       margin-bottom: 10px;
-    }
-}
+// &__item:not(:last-child) {
+//     @media screen  and (min-width: 767px) and (max-width:1119px) {
+//        margin-bottom: 10px;
+//     }
+// }
 
 &__link {
     display: flex;
@@ -118,9 +117,9 @@
     margin-right: 10px; 
     fill: currentColor;
 
-    @media screen  and (min-width: 767px) and (max-width:1119px) {
-        margin-right: 8px; 
-    }
+    // @media screen  and (min-width: 767px) and (max-width:1119px) {
+    //     margin-right: 8px; 
+    // }
 }
 }
 

@@ -77,16 +77,6 @@ h2, p {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 767px) and (max-width: 1119px) {
-  .header__flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,11 +92,6 @@ h2, p {
   display: flex;
   margin-left: 93px;
   gap: 50px;
-}
-@media screen and (max-width: 767px) {
-  .menu {
-    display: none;
-  }
 }
 .menu__link {
   display: inline-block;
@@ -145,39 +130,11 @@ h2, p {
 .contacts {
   margin-left: auto;
 }
-@media screen and (max-width: 767px) {
-  .contacts {
-    display: none;
-  }
-}
 .contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
-}
-@media screen and (min-width: 767px) and (max-width: 1119px) {
-  .contacts__list {
-    display: block;
-  }
-}
-@media screen and (min-width: 767px) and (max-width: 1119px) {
-  .contacts__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-}
-@media screen and (min-width: 767px) and (max-width: 1119px) {
-  .contacts__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
 }
 .contacts__link {
   display: -webkit-box;
@@ -204,11 +161,6 @@ h2, p {
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
-}
-@media screen and (min-width: 767px) and (max-width: 1119px) {
-  .contacts__icon {
-    margin-right: 8px;
-  }
 }
 
 .section {

@@ -12,6 +12,13 @@
     background-position: center;
     text-align: center;
 
+    // @media (min-devise-pixel-ratio: 2),
+    // (min-resolution:192dpi),
+    // (min-resolution:2dppx) {
+    //     background-image: url('/images/hero-desktop1600x600img@2x.jpg')
+    //     }
+    // }
+
     &__title {
     margin-left: auto;
     margin-right: auto;
@@ -27,4 +34,3 @@
     max-width: 696px;
 }
 }
-
